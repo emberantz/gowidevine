@@ -8,7 +8,7 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	wvpb "github.com/iyear/gowidevine/widevinepb"
+	wvpb "github.com/emberantz/gowidevine/widevinepb"
 )
 
 func decodeBase64(t require.TestingT, b64 string) []byte {

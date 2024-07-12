@@ -11,7 +11,7 @@ import (
 	"github.com/chmike/cmac-go"
 	"google.golang.org/protobuf/proto"
 
-	wvpb "github.com/iyear/gowidevine/widevinepb"
+	wvpb "github.com/emberantz/gowidevine/widevinepb"
 )
 
 func ptr[T any](v T) *T {

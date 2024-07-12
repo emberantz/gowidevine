@@ -223,10 +223,7 @@ func decryptSamplesInPlace(schemeType string, samples []mp4.FullSample, key []by
 		}
 		switch schemeType {
 		case schemeCENC:
-			err := mp4.DecryptSampleCenc(encSample, key, iv, subSamplePatterns)
-			if err != nil {
-				return err
-			}
+			// TODO: Add support for subsample encryption
 		case schemeCBCS:
 			err := mp4.DecryptSampleCbcs(encSample, key, iv, subSamplePatterns, tenc)
 			if err != nil {
